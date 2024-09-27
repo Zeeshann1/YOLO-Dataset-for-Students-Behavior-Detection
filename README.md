@@ -26,6 +26,10 @@ pip install -r requirements.txt
 ```
 python train.py --img 640 --batch 16 --epochs 100 --data data.yaml --weights yolov5s.pt --device 0
 ```
+### Exporting Model into ONNX
+```
+python export.py --weights runs/train/exp/weights/best.pt --include onnx
+```
 
 ### Inference
 ```
